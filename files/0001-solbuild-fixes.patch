@@ -1,0 +1,48 @@
+From 0ba86dbd51a12f4656ef87a8320a889cf0773b1a Mon Sep 17 00:00:00 2001
+From: Joey Riches <josephriches@gmail.com>
+Date: Wed, 16 Aug 2017 14:16:30 +0100
+Subject: [PATCH 1/1] solbuild fixes
+
+---
+ bin/package.js | 4 ++--
+ package.json   | 2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/bin/package.js b/bin/package.js
+index 9f59a19..fa105dd 100755
+--- a/bin/package.js
++++ b/bin/package.js
+@@ -109,7 +109,7 @@ const all = {
+ 
+   // Runs `npm prune --production` which remove the packages specified in
+   // "devDependencies" before starting to package the app.
+-  prune: true,
++  prune: false,
+ 
+   // The Electron version that the app is built with (without the leading 'v')
+   electronVersion: require('electron/package.json').version
+@@ -175,7 +175,7 @@ const linux = {
+   platform: 'linux',
+ 
+   // Build ia32 and x64 binaries.
+-  arch: ['ia32', 'x64']
++  arch: ['x64']
+ 
+   // Note: Application icon for Linux is specified via the BrowserWindow `icon` option.
+ }
+diff --git a/package.json b/package.json
+index fe5820c..2a0da76 100644
+--- a/package.json
++++ b/package.json
+@@ -101,7 +101,7 @@
+     "gh-release": "gh-release",
+     "open-config": "node ./bin/open-config.js",
+     "package": "node ./bin/package.js",
+-    "prepublish": "npm run build",
++    "prepublish": "npm run build --unsafe-perm",
+     "start": "npm run build && electron .",
+     "test": "standard && depcheck --ignores=buble,nodemon,gh-release --ignore-dirs=build,dist && node ./bin/extra-lint.js",
+     "test-integration": "npm run build && node ./test",
+-- 
+2.14.1
+
