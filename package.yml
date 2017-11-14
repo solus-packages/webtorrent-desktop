@@ -1,8 +1,8 @@
 name       : webtorrent-desktop
-version    : 0.18.0
-release    : 1
+version    : 0.19.0
+release    : 2
 source     :
-    - https://github.com/webtorrent/webtorrent-desktop/archive/v0.18.0.tar.gz : 25b92aab9cc6d076715a12bdaeae950f6885da19d87948a6acf007ba246b9494
+    - https://github.com/webtorrent/webtorrent-desktop/archive/v0.19.0.tar.gz : 1d8e7d6213058430f5c6e2574abee993ab417c89a10defb4eb42333a0aa8906e
 license    : MIT
 component  : multimedia.video
 networking : yes
@@ -11,14 +11,11 @@ description: |
     Webtorrent allows you to stream torrent files sequentially and watch them as you download, rather than downloading first, and then watching the files.
 builddeps  :
     - pkgconfig(alsa)
+    - pkgconfig(fontconfig)
     - pkgconfig(gconf-2.0)
-    - pkgconfig(gtk+-2.0)
-    - pkgconfig(xcomposite)
-    - pkgconfig(xcursor)
-    - pkgconfig(xi)
-    - pkgconfig(xkbfile)
-    - pkgconfig(xrandr)
+    - pkgconfig(gtk+-3.0)
     - pkgconfig(xscrnsaver)
+    - cups-devel
     - nodejs
 setup      : |
     %patch -p1 < $pkgfiles/0001-solbuild-fixes.patch
@@ -27,13 +24,13 @@ build      : |
     npm install
     npm run package linux
 install    : |
-    install -Dm644 $workdir/static/WebTorrent.png $installdir/usr/share/pixmaps/webtorrent-desktop.png
-    install -Dm644 $pkgfiles/webtorrent-desktop.desktop $installdir/usr/share/applications/webtorrent-desktop.desktop
+    install -Dm00644 $workdir/static/WebTorrent.png $installdir/usr/share/pixmaps/webtorrent-desktop.png
+    install -Dm00644 $pkgfiles/webtorrent-desktop.desktop $installdir/usr/share/applications/webtorrent-desktop.desktop
 
-    install -dm755 $installdir/usr/share/webtorrent-desktop
+    install -dm00755 $installdir/usr/share/webtorrent-desktop
     cp -r $workdir/dist/WebTorrent-linux-x64/* $installdir/usr/share/webtorrent-desktop/
 
-    install -dm755 $installdir/usr/bin/
+    install -dm00755 $installdir/usr/bin/
     ln -sv /usr/share/webtorrent-desktop/WebTorrent $installdir/usr/bin/webtorrent-desktop
 
 
