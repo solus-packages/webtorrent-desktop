@@ -11,6 +11,7 @@ Terminal=false
 Path=/usr/share/webtorrent-desktop
 Exec=/usr/bin/webtorrent-desktop %U
 TryExec=/usr/bin/webtorrent-desktop
+StartupWMClass=WebTorrent
 StartupNotify=false
 Categories=Network;FileTransfer;P2P;
 MimeType=application/x-bittorrent;x-scheme-handler/magnet;x-scheme-handler/stream-magnet;

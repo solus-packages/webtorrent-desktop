@@ -1,6 +1,6 @@
 name       : webtorrent-desktop
 version    : 0.19.0
-release    : 2
+release    : 3
 source     :
     - https://github.com/webtorrent/webtorrent-desktop/archive/v0.19.0.tar.gz : 1d8e7d6213058430f5c6e2574abee993ab417c89a10defb4eb42333a0aa8906e
 license    : MIT
