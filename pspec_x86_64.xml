@@ -2,8 +2,8 @@
     <Source>
         <Name>webtorrent-desktop</Name>
         <Packager>
-            <Name>Joey Riches</Name>
-            <Email>josephriches@gmail.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Packager>
         <License>MIT</License>
         <PartOf>multimedia.video</PartOf>
@@ -19,19 +19,95 @@
 </Description>
         <PartOf>multimedia.video</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/webtorrent-desktop</Path>
             <Path fileType="data">/usr/share/applications/webtorrent-desktop.desktop</Path>
             <Path fileType="data">/usr/share/pixmaps/webtorrent-desktop.png</Path>
-            <Path fileType="data">/usr/share/webtorrent-desktop</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/LICENSE</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/LICENSES.chromium.html</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/WebTorrent</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/blink_image_resources_200_percent.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/content_resources_200_percent.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/content_shell.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/icudtl.dat</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/libffmpeg.so</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/libnode.so</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/am.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/ar.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/bg.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/bn.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/ca.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/cs.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/da.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/de.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/el.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/en-GB.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/en-US.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/es-419.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/es.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/et.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/fa.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/fake-bidi.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/fi.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/fil.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/fr.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/gu.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/he.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/hi.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/hr.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/hu.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/id.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/it.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/ja.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/kn.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/ko.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/lt.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/lv.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/ml.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/mr.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/ms.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/nb.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/nl.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/pl.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/pt-BR.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/pt-PT.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/ro.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/ru.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/sk.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/sl.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/sr.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/sv.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/sw.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/ta.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/te.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/th.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/tr.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/uk.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/vi.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/zh-CN.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/locales/zh-TW.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/natives_blob.bin</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/pdf_viewer_resources.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/resources/app.asar</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/resources/app.asar.unpacked/static/WebTorrent.icns</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/resources/app.asar.unpacked/static/WebTorrent.ico</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/resources/app.asar.unpacked/static/WebTorrent.png</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/resources/app.asar.unpacked/static/WebTorrentFile.icns</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/resources/app.asar.unpacked/static/WebTorrentFile.ico</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/resources/app.asar.unpacked/static/WebTorrentFile.png</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/resources/electron.asar</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/snapshot_blob.bin</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/ui_resources_200_percent.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/version</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/views_resources_200_percent.pak</Path>
         </Files>
     </Package>
     <History>
-        <Update release="4">
-            <Date>2018-05-02</Date>
+        <Update release="5">
+            <Date>2018-08-04</Date>
             <Version>0.20.0</Version>
             <Comment>Packaging update</Comment>
-            <Name>Joey Riches</Name>
-            <Email>josephriches@gmail.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Update>
     </History>
 </PISI>
