@@ -2,15 +2,15 @@
     <Source>
         <Name>webtorrent-desktop</Name>
         <Packager>
-            <Name>Pierre-Yves</Name>
-            <Email>pyu@riseup.net</Email>
+            <Name>Joey Riches</Name>
+            <Email>josephriches@gmail.com</Email>
         </Packager>
         <License>MIT</License>
         <PartOf>multimedia.video</PartOf>
         <Summary xml:lang="en">Cross platform streaming torrent app</Summary>
         <Description xml:lang="en">Webtorrent allows you to stream torrent files sequentially and watch them as you download, rather than downloading first, and then watching the files.
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>webtorrent-desktop</Name>
@@ -102,12 +102,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="5">
-            <Date>2018-08-04</Date>
+        <Update release="6">
+            <Date>2019-07-24</Date>
             <Version>0.20.0</Version>
             <Comment>Packaging update</Comment>
-            <Name>Pierre-Yves</Name>
-            <Email>pyu@riseup.net</Email>
+            <Name>Joey Riches</Name>
+            <Email>josephriches@gmail.com</Email>
         </Update>
     </History>
 </PISI>
