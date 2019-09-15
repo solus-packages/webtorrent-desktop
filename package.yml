@@ -1,8 +1,8 @@
 name       : webtorrent-desktop
-version    : 0.20.0
-release    : 6
+version    : 0.21.0
+release    : 7
 source     :
-    - https://github.com/webtorrent/webtorrent-desktop/archive/v0.20.0.tar.gz : 2eec644337f2e8a47187c54d702491e3b4c1f1236dae48cb494c4e99ba0a9796
+    - https://github.com/webtorrent/webtorrent-desktop/archive/v0.21.0.tar.gz : 6a622ae14a7424604b8a94402156bfdd4b1debf9fe4e6db852f38061910febd4
 license    : MIT
 component  : multimedia.video
 networking : yes
@@ -11,16 +11,13 @@ description: |
     Webtorrent allows you to stream torrent files sequentially and watch them as you download, rather than downloading first, and then watching the files.
 builddeps  :
     - pkgconfig(alsa)
-    - pkgconfig(fontconfig)
-    - pkgconfig(gconf-2.0)
-    - pkgconfig(gtk+-2.0)
+    - pkgconfig(gtk+-3.0)
     - pkgconfig(xi)
     - pkgconfig(xscrnsaver)
     - pkgconfig(xtst)
     - cups-devel
     - nodejs
-setup      : |
-    %patch -p1 < $pkgfiles/0001-solbuild-fixes.patch
+    - git
 build      : |
     npm config set unsafe-perm=true
     npm install

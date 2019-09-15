@@ -25,12 +25,13 @@
             <Path fileType="data">/usr/share/webtorrent-desktop/LICENSE</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/LICENSES.chromium.html</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/WebTorrent</Path>
-            <Path fileType="data">/usr/share/webtorrent-desktop/blink_image_resources_200_percent.pak</Path>
-            <Path fileType="data">/usr/share/webtorrent-desktop/content_resources_200_percent.pak</Path>
-            <Path fileType="data">/usr/share/webtorrent-desktop/content_shell.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/chrome-sandbox</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/chrome_100_percent.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/chrome_200_percent.pak</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/icudtl.dat</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/libEGL.so</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/libGLESv2.so</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/libffmpeg.so</Path>
-            <Path fileType="data">/usr/share/webtorrent-desktop/libnode.so</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/locales/am.pak</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/locales/ar.pak</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/locales/bg.pak</Path>
@@ -46,7 +47,6 @@
             <Path fileType="data">/usr/share/webtorrent-desktop/locales/es.pak</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/locales/et.pak</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/locales/fa.pak</Path>
-            <Path fileType="data">/usr/share/webtorrent-desktop/locales/fake-bidi.pak</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/locales/fi.pak</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/locales/fil.pak</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/locales/fr.pak</Path>
@@ -86,7 +86,7 @@
             <Path fileType="data">/usr/share/webtorrent-desktop/locales/zh-CN.pak</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/locales/zh-TW.pak</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/natives_blob.bin</Path>
-            <Path fileType="data">/usr/share/webtorrent-desktop/pdf_viewer_resources.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/resources.pak</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/resources/app.asar</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/resources/app.asar.unpacked/static/WebTorrent.icns</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/resources/app.asar.unpacked/static/WebTorrent.ico</Path>
@@ -96,15 +96,16 @@
             <Path fileType="data">/usr/share/webtorrent-desktop/resources/app.asar.unpacked/static/WebTorrentFile.png</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/resources/electron.asar</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/snapshot_blob.bin</Path>
-            <Path fileType="data">/usr/share/webtorrent-desktop/ui_resources_200_percent.pak</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/swiftshader/libEGL.so</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/swiftshader/libGLESv2.so</Path>
+            <Path fileType="data">/usr/share/webtorrent-desktop/v8_context_snapshot.bin</Path>
             <Path fileType="data">/usr/share/webtorrent-desktop/version</Path>
-            <Path fileType="data">/usr/share/webtorrent-desktop/views_resources_200_percent.pak</Path>
         </Files>
     </Package>
     <History>
-        <Update release="6">
-            <Date>2019-07-24</Date>
-            <Version>0.20.0</Version>
+        <Update release="7">
+            <Date>2019-09-15</Date>
+            <Version>0.21.0</Version>
             <Comment>Packaging update</Comment>
             <Name>Joey Riches</Name>
             <Email>josephriches@gmail.com</Email>
